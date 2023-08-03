@@ -195,7 +195,7 @@ output$kmo <- renderPrint({
               
   # for grouping we want to see only cols where the number of unique values are less than 
   # 10% the number of observations
-    grouping_cols <- sapply(seq(1, ncol(the_data)), function(i) length(unique(the_data[,i])) < nrow(the_data)/10 )
+    grouping_cols <- sapply(seq(1, ncol(the_data)), function(i) length(unique(the_data[,i])) < nrow(the_data)/20 )
     
     the_data_group_cols <- the_data[, grouping_cols, drop = FALSE]
     # drop down selection
