@@ -285,7 +285,7 @@ output$the_pcs_to_plot_y <- renderUI({
                                                   )) +
         
         
-        geom_point(color = "steelblue",  size = 5) +
+        geom_point(color = "steelblue",  size = 2) +
         theme_bw(base_size = 14) +
         coord_equal() +
         xlab(paste0(input$the_pcs_to_plot_x, " (", var_expl_x, "% explained variance)")) +
