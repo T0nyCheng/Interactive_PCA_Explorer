@@ -305,7 +305,7 @@ output$the_pcs_to_plot_y <- renderUI({
                                           )) +
       stat_ellipse(geom = "polygon", alpha = 0.1) +
     
-      geom_text(aes(label = labels),  size = 5) +
+      geom_point(size = 2) +
       theme_bw(base_size = 14) +
       scale_colour_discrete(guide = FALSE) +
       guides(fill = guide_legend(title = "groups")) +
